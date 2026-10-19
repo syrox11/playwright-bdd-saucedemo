@@ -1,0 +1,21 @@
+{
+  "name": "playwright-bdd-saucedemo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E2E test automation for saucedemo.com with Playwright, TypeScript and Gherkin/BDD",
+  "scripts": {
+    "test": "bddgen && playwright test",
+    "test:smoke": "bddgen && playwright test --grep @smoke",
+    "test:chromium": "bddgen && playwright test --project=chromium",
+    "report": "playwright show-report",
+    "typecheck": "tsc"
+  },
+  "author": "Artiom Syrovatskyy Kovalyov",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "^7.0.2"
+  }
+}
